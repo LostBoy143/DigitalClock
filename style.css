@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide", poppins, monospace;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(209, 132, 165);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 200%;
+  background-color: rgba(7, 7, 24, 0.224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(7, 9, 39);
+  font-size: 2rem;
+  box-shadow: 5px 5px 10px rgb(247, 10, 10);
+}
+.container {
+  height: 180px;
+  width: 40%;
+  background-color: rgba(128, 13, 185, 0.228);
+
+  color: white;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(247, 10, 10);
+}
+.date {
+  height: 25%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  color: rgba(255, 255, 255, 0.493);
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clock {
+  height: 75%;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.872);
+  color: #b9dfff;
+  color: #fff;
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff,
+    0 0 5px #fff, 0 0 5px #228dff,
+    0 0 15px #228dff, 0 0 20px #228dff;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 0 0 10px 10px;
+}
+
+.main {
+  width: 90px;
+}
+.together {
+  margin-left: 20px;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(7, 7, 24, 0.224);
+  position: fixed;
+  bottom: 0;
+  color: rgb(7, 9, 39);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 30px;
+}
