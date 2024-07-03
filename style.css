@@ -121,17 +121,22 @@ footer {
   nav {
     font-size: 1.2rem;
   }
-  .together {
+  /* .together {
     margin-left: 10px;
-  }
+  } */
   #hours {
     margin-left: 10px;
   }
   .colons {
-    margin-right: 10px;
+    margin-right: 4px;
+    margin-right: 4px;
   }
   #clock {
     font-size: 24px;
     overflow: hidden;
+    text-shadow: 0 0 2px #fff, 0 0 3px #fff,
+      0 0 2px #fff, 0 0 2px #228dff,
+      0 0 8px #228dff, 0 0 10px #228dff;
+    padding: 3px;
   }
 }
