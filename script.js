@@ -3,11 +3,17 @@ let mins = document.getElementById("minutes");
 let sec = document.getElementById("seconds");
 let date = document.querySelector("#currentDate");
 let time = document.querySelector("#am-pm");
+let session = "AM";
 
 setInterval(function () {
   let currentTime = new Date();
   let month = currentTime.getMonth() + 1;
-  let session = "AM";
+  let hours = currentTime.getHours();
+  if (hours > 12) {
+    hours = hours - 12;
+    session = "PM";
+  }
+  time.innerHTML = session;
 
   date.innerHTML =
     currentTime.getDate() +
@@ -17,9 +23,7 @@ setInterval(function () {
     currentTime.getFullYear();
 
   hrs.innerHTML =
-    currentTime.getHours() < 10
-      ? "0" + currentTime.getHours()
-      : currentTime.getHours();
+    hours < 10 ? "0" + hours : hours;
 
   mins.innerHTML =
     currentTime.getMinutes() < 10
@@ -30,10 +34,4 @@ setInterval(function () {
     currentTime.getSeconds() < 10
       ? "0" + currentTime.getSeconds()
       : currentTime.getSeconds();
-
-  if (hrs > 12) {
-    hrs = hrs - 12;
-    session = "PM";
-  }
-  time.innerHTML = session;
 }, 1000);

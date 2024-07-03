@@ -89,3 +89,49 @@ footer {
   align-items: center;
   padding-right: 30px;
 }
+@media (max-width: 1032px) {
+  .container {
+    width: 50%;
+  }
+  #hours {
+    margin-left: 24px;
+  }
+  #clock {
+    overflow: hidden;
+    font-size: 36px;
+  }
+}
+@media (max-width: 748px) {
+  .container {
+    width: 60%;
+  }
+  #clock {
+    font-size: 32px;
+    overflow: hidden;
+  }
+  #hours {
+    margin-left: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    height: 150px;
+  }
+  nav {
+    font-size: 1.2rem;
+  }
+  .together {
+    margin-left: 5px;
+  }
+  #hours {
+    margin-left: 14px;
+  }
+  .colons {
+    margin-right: 5px;
+  }
+  #clock {
+    font-size: 24px;
+    overflow: hidden;
+  }
+}
